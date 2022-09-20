@@ -1,0 +1,14 @@
+Package: Dictionorm
+Title: Analyzes texts using norm dictionaries
+Version: 0.1.0
+Authors@R: 
+    person("Avi", "Gamoran", , "avigam@post.bgu.ac.il", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8559-5941"))
+Description: Packages offers a collection of free access dictionaries and tools for text analysis using simple and norms dictionaries.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Depends: 
+    R (>= 2.10), dplyr, textstem, quanteda
+LazyData: true
