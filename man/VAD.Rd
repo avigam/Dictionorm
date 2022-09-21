@@ -3,7 +3,7 @@
 \docType{data}
 \name{VAD}
 \alias{VAD}
-\title{The Evaluative Lexicon}
+\title{Norms of valence, arousal, and dominance}
 \format{
 A data frame with 13915 rows and 65 variables.
 }

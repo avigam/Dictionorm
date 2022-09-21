@@ -74,6 +74,7 @@ analyze_text <- function(data,text_column = 'text', dict_name='concrete', lemmat
 #' 
 #' @keywords lexicon, dictionary
 #' @export
+#' @importFrom dplyr `%>%`
 #' @examples
 #' preproc_text(data.frame(text="For sweetest things turn sourest by their deeds"))
 #' 
@@ -121,6 +122,8 @@ lemmatize_preproc <- function(data,text_column,word_column){
 #' 
 #' 
 #' @keywords lexicon, dictionary
+#' @importFrom dplyr tibble
+#' @importFrom dplyr `%>%`
 #' @export
 #' @examples
 #' proc_toks <- preproc_text(data.frame(text="Uneasy lies the head that wears the crown."))
@@ -167,6 +170,8 @@ norm_dicts <- function (now_toks,now_dict,column,word_column='Word'){
 #' 
 #' @keywords lexicon, dictionary
 #' @export
+#' @importFrom dplyr as_tibble
+#' @importFrom dplyr `%>%`
 #' @examples
 #' 
 #' proc_toks <- preproc_text(data.frame(text="I wasted time, and now doth time waste me."))

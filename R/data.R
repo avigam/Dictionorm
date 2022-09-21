@@ -145,7 +145,7 @@
 "threat"
 
 
-#' The Evaluative Lexicon
+#' Norms of valence, arousal, and dominance
 #'
 #' A publicly available dataset with the values of valence, arousal and dominance of word lemmas. From the TATE package.
 #' 
