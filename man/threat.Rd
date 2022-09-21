@@ -5,7 +5,7 @@
 \alias{threat}
 \title{The threat Dictionary}
 \format{
-An object of class dictionary2 of length 1:
+An object of class dictionary2 of length 1.
 }
 \source{
 \url{https://www.michelegelfand.com/threat-dictionary}

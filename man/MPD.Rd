@@ -5,7 +5,7 @@
 \alias{MPD}
 \title{The Mind Perception Dictionary (MPD)}
 \format{
-An object of class dictionary2 of length 5:
+An object of class dictionary2 of length 5.
 }
 \source{
 \url{https://www.adamwaytz.com/measures-and-materials/the-mind-perception-dictionary}

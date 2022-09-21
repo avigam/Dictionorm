@@ -3,7 +3,7 @@
 #' A quanteda dictionary object with the Affective Norms for English Words (AFINN), a publicly available list of English words rated for valence. Contains 2,477 words and phrases with a binary classification into 878 positive (valence > 0) and 1,599 negative (valence < 0) features. From quanteda.dictionaries.'
 #' 
 #' 
-#' @format An object of class dictionary2 of length 2:
+#' @format An object of class dictionary2 of length 2.
 #' 
 #' @source \url{http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010}
 #' 
@@ -16,7 +16,7 @@
 #' A publicly available dataset with the Test-based age-of-acquisition norms for 44 thousand English word meanings.
 #' 
 #' 
-#' @format A data frame with 43998 rows and 8 variables:
+#' @format A data frame with 43998 rows and 8 variables.
 #' 
 #' @source \url{https://osf.io/kz2px/}
 #' 
@@ -29,7 +29,7 @@
 #' A publicly available dataset with the Test-based age-of-acquisition norms for 44 thousand English word meanings.
 #' 
 #' 
-#' @format A data frame with 39954 rows and 9 variables:
+#' @format A data frame with 39954 rows and 9 variables.
 #' 
 #' @source \url{https://link.springer.com/article/10.3758/s13428-013-0403-5#MOESM1}
 #' 
@@ -42,7 +42,7 @@
 #' A publicly available dataset with the valence, extremity and emotionality of word lemmas. From the TATE package.
 #' 
 #' 
-#' @format A data frame with 1541 rows and 4 variables:
+#' @format A data frame with 1541 rows and 4 variables.
 #' 
 #' 
 #'  
@@ -55,7 +55,7 @@
 #' A publicly available dataset with humor scores of word lemmas. From the TATE package.
 #' 
 #' 
-#' @format A data frame with 4997 rows and 16 variables:
+#' @format A data frame with 4997 rows and 16 variables.
 #' 
 #'  
 #' @references Engelthaler, T., & Hills, T. T. (2018). Humor norms for 4,997 English words. In *Behavior research methods*, 50(3), 1116-1124.
@@ -67,7 +67,7 @@
 #' A publicly available dataset with the multidimensional measures of perceptual and action strength for 40,000 English words.
 #' 
 #' 
-#' @format A data frame with 39707 rows and 45 variables:
+#' @format A data frame with 39707 rows and 45 variables.
 #' 
 #' @source \url{https://osf.io/7emr6/}
 #' 
@@ -80,7 +80,7 @@
 #' A quanteda dictionary object with A publicly available dictionary that can assess frequency of words related to mind perception.
 #' 
 #' 
-#' @format An object of class dictionary2 of length 5:
+#' @format An object of class dictionary2 of length 5.
 #' 
 #' @source \url{https://www.adamwaytz.com/measures-and-materials/the-mind-perception-dictionary}
 #' 
@@ -93,7 +93,7 @@
 #' A publicly available dataset with the Mental-Physical Verb Norms (MPVN) scores of word lemmas to measure mental state attribution.
 #' 
 #' 
-#' @format A data frame with 250 rows and 6 variables:
+#' @format A data frame with 250 rows and 6 variables.
 #' 
 #' 
 #' @source \url{https://www.adamwaytz.com/measures-and-materials/the-mind-perception-dictionary}
@@ -108,7 +108,7 @@
 #' A quanteda dictionary object with the English version of the NRC Word-Emotion Association Lexicon. The association of words with eight emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive) manually annotated on Amazon's Mechanical Turk. From quanteda.dictionaries.
 #' 
 #' 
-#' @format An object of class dictionary2 of length 10:
+#' @format An object of class dictionary2 of length 10.
 #' 
 #' 
 #' @source \url{http://saifmohammad.com/WebPages/AccessResource.htm}
@@ -124,7 +124,7 @@
 #' A publicly available dataset with the prevalence measures of 62 thousand english lemmas. Word prevalence refers to the number of people who know the word. The measure was obtained on the basis of an online crowdsourcing study involving over 220,000 people.
 #' 
 #' 
-#' @format A data frame with 61855 rows and 5 variables:
+#' @format A data frame with 61855 rows and 5 variables.
 #' 
 #' @source \url{https://osf.io/g4xrt/}
 #' 
@@ -137,7 +137,7 @@
 #' A quanteda dictionary object with A publicly available dictionary that indexes threat levels from texts.
 #' 
 #' 
-#' @format An object of class dictionary2 of length 1:
+#' @format An object of class dictionary2 of length 1.
 #' 
 #' @source \url{https://www.michelegelfand.com/threat-dictionary}
 #' 
@@ -150,7 +150,7 @@
 #' A publicly available dataset with the values of valence, arousal and dominance of word lemmas. From the TATE package.
 #' 
 #' 
-#' @format A data frame with 13915 rows and 65 variables:
+#' @format A data frame with 13915 rows and 65 variables.
 #' 
 #'  
 #' @references Warriner, A. B., Kuperman, V., & Brysbaert, M. (2013). Norms of valence, arousal, and dominance for 13,915 English lemmas. In *Behavior research methods*, 45(4), 1191-1207.
@@ -162,5 +162,4 @@
 #'
 #' A summary table with the names of dictionaries included in the package, the type of tokens which the dictionary accepts (tokens/lemmas), the type of the dictionary (norms or "simple" like LIWC), the columns of the dataset to use in the text analysis and the default names given to the output of each measure in the dictionary.
 #' 
-#' 
-
+"dict_info"

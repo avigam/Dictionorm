@@ -5,7 +5,7 @@
 \alias{Prevalences}
 \title{Word prevalence norms for 62,000 English lemmas}
 \format{
-A data frame with 61855 rows and 5 variables:
+A data frame with 61855 rows and 5 variables.
 }
 \source{
 \url{https://osf.io/g4xrt/}

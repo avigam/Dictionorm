@@ -5,7 +5,7 @@
 \alias{humor}
 \title{Humor Norms}
 \format{
-A data frame with 4997 rows and 16 variables:
+A data frame with 4997 rows and 16 variables.
 }
 \usage{
 humor

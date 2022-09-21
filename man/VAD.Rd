@@ -5,7 +5,7 @@
 \alias{VAD}
 \title{The Evaluative Lexicon}
 \format{
-A data frame with 13915 rows and 65 variables:
+A data frame with 13915 rows and 65 variables.
 }
 \usage{
 VAD

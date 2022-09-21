@@ -5,7 +5,7 @@
 \alias{concrete}
 \title{Concrete Norms for 40 thousand English Word lemmas}
 \format{
-A data frame with 39954 rows and 9 variables:
+A data frame with 39954 rows and 9 variables.
 }
 \source{
 \url{https://link.springer.com/article/10.3758/s13428-013-0403-5#MOESM1}

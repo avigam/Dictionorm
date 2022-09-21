@@ -5,7 +5,7 @@
 \alias{MPVN}
 \title{The Mental-Physical Verb Norms (MPVN)}
 \format{
-A data frame with 250 rows and 6 variables:
+A data frame with 250 rows and 6 variables.
 }
 \source{
 \url{https://www.adamwaytz.com/measures-and-materials/the-mind-perception-dictionary}

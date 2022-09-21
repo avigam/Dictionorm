@@ -5,7 +5,7 @@
 \alias{AoA}
 \title{Age of Aquisition Norms for English Words (AoA)}
 \format{
-A data frame with 43998 rows and 8 variables:
+A data frame with 43998 rows and 8 variables.
 }
 \source{
 \url{https://osf.io/kz2px/}

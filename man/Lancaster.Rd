@@ -5,7 +5,7 @@
 \alias{Lancaster}
 \title{The Lancaster Sensorimotor Norms}
 \format{
-A data frame with 39707 rows and 45 variables:
+A data frame with 39707 rows and 45 variables.
 }
 \source{
 \url{https://osf.io/7emr6/}

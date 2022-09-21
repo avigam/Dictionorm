@@ -5,6 +5,7 @@
 #' @param data The data set with texts to analyze.
 #' @param text_column The name of the column in data with the texts. Defaults to 'text'.
 #' @param dict_name The name of the dictionary used for the analysis. Defaults to 'concrete'.
+#' @param lemmatize Whether to lemmatize the words in the text (TRUE/FALSE). Defaults to NULL, in which case the dictionary's default is chosen (see `dict_info`).
 #' 
 #' @keywords lexicon, dictionary
 #' @export
@@ -13,30 +14,54 @@
 #' 
 #' analyze_text(data.frame(bard="Lord, what fools these mortals be!"),text_column='bard',dict='VAD')
 
-analyze_text <- function(data,text_column = 'text', dict_name='concrete'){
-  if(sum(dict_info$dict_names%in%dict_name)==0){
+analyze_text <- function(data,text_column = 'text', dict_name='concrete', lemmatize = NULL){
+  if(sum(Dictionorm::dict_info$dict_names%in%dict_name)==0){
     message('Error, dictionary not found. See dict_info$dict_names for included dictionary names.')
   }
   else{
-    dict_entry <- dict_info$dict_entry[dict_info$dict_names%in%dict_name]
-    propped <- preproc_text(data,text_column = text_column,dict_entry=dict_entry)
-    dict_type <- dict_info$dict_type[dict_info$dict_names%in%dict_name]
-    norm_column <- dict_info$norm_column[[which(dict_info$dict_names%in%dict_name)]]
-    out_names <- dict_info$out_norm_column[[which(dict_info$dict_names%in%dict_name)]]
-    dict <- all_dicts[[dict_name]]
-    
-    if(dict_type=='norms'){
-      names(dict)[grep('word',names(dict),ignore.case = T)] <- 'Word'
-      responses <- norm_dicts(propped,dict,column=norm_column)
-      colnames(responses)[2:(1+length(out_names))] <- out_names
-    }
-    else{
-      if(dict_type=='LIWCalike'){
-        responses <- liwcalike_dicts(propped,dict)
-        colnames(responses)[2:(1+length(out_names))] <- out_names
+    lem_flag <- TRUE
+    if(!is.null(lemmatize)){
+      if(lemmatize!=TRUE&lemmatize!=FALSE){
+        lem_flag <- FALSE
       }
     }
-    return(responses)
+    
+    if(lem_flag!=TRUE){
+      message('Error, lemmatize must be TRUE/FALSE/NULL')
+    }
+    else{
+      if(is.null(lemmatize)){
+        dict_entry <- Dictionorm::dict_info$dict_entry[Dictionorm::dict_info$dict_names%in%dict_name]
+      }
+      else{
+        if(lemmatize==TRUE){
+          dict_entry <- "lemmas"
+        }
+        else{
+          if(lemmatize==FALSE){
+            dict_entry <- "tokens"
+          }
+        }
+      }
+      propped <- preproc_text(data,text_column = text_column,dict_entry=dict_entry)
+      dict_type <- Dictionorm::dict_info$dict_type[Dictionorm::dict_info$dict_names%in%dict_name]
+      norm_column <- Dictionorm::dict_info$norm_column[[which(Dictionorm::dict_info$dict_names%in%dict_name)]]
+      out_names <- Dictionorm::dict_info$out_norm_column[[which(Dictionorm::dict_info$dict_names%in%dict_name)]]
+      dict <- Dictionorm::all_dicts[[dict_name]]
+      
+      if(dict_type=='norms'){
+        names(dict)[grep('word',names(dict),ignore.case = T)] <- 'Word'
+        responses <- norm_dicts(propped,dict,column=norm_column)
+        colnames(responses)[2:(1+length(out_names))] <- out_names
+      }
+      else{
+        if(dict_type=='LIWCalike'){
+          responses <- liwcalike_dicts(propped,dict)
+          colnames(responses)[2:(1+length(out_names))] <- out_names
+        }
+      }
+      return(responses)
+    }
   }
 }
 

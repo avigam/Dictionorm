@@ -5,7 +5,7 @@
 \alias{NRC}
 \title{NRC Word-Emotion Association Lexicon}
 \format{
-An object of class dictionary2 of length 10:
+An object of class dictionary2 of length 10.
 }
 \source{
 \url{http://saifmohammad.com/WebPages/AccessResource.htm}

@@ -5,7 +5,7 @@
 \alias{evlex}
 \title{The Evaluative Lexicon}
 \format{
-A data frame with 1541 rows and 4 variables:
+A data frame with 1541 rows and 4 variables.
 }
 \usage{
 evlex

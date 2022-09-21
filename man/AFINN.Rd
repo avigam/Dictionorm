@@ -5,7 +5,7 @@
 \alias{AFINN}
 \title{Affective Norms for English Words (AFINN)}
 \format{
-An object of class dictionary2 of length 2:
+An object of class dictionary2 of length 2.
 }
 \source{
 \url{http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010}
